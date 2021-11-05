@@ -6,7 +6,7 @@ import { Roof } from "../../components/Roof";
 import { Window } from "../../components/Window";
 import { PageProps } from "../types";
 
-export const Demo: React.FunctionComponent<PageProps> = (props) => {
+export const Demo: React.FunctionComponent<PageProps> = () => {
   return (
     <>
       <div className="m-cloud-wrapper">
@@ -17,13 +17,13 @@ export const Demo: React.FunctionComponent<PageProps> = (props) => {
         <Cloud baseSize="30px" topOffset="65px" delay="17s" />
       </div>
 
-      <Building width={312} height={336}>
+      <Building width="312px" height="336px">
         <Roof />
         <div className="m-window-row">
-          <Window frameColorH="218deg" frameColorS="100%" frameColorL="17%" />
-          <Window frameColorH="218deg" frameColorS="100%" frameColorL="17%" />
-          <Window frameColorH="218deg" frameColorS="100%" frameColorL="17%" />
-          <Window frameColorH="218deg" frameColorS="100%" frameColorL="17%" />
+          <Window frameColor="#002057" />
+          <Window frameColor="#002057" />
+          <Window frameColor="#002057" />
+          <Window frameColor="#002057" />
         </div>
         <Door hasStairs />
       </Building>
@@ -34,15 +34,10 @@ export const Demo: React.FunctionComponent<PageProps> = (props) => {
           <Window />
           <Window />
         </div>
-        <Door doorColorH="75deg" doorColorS="9%" doorColorL="42%" />
+        <Door doorColor="#707561" />
       </Building>
 
-      <Building
-        width={288}
-        height={480}
-        pattern="masonry"
-        borderColor="#643120"
-      >
+      <Building width="288px" height="480px" pattern="masonry">
         <Roof roofColor="#643120" />
         <div className="m-window-row">
           <Window />
@@ -59,7 +54,7 @@ export const Demo: React.FunctionComponent<PageProps> = (props) => {
           <Window />
           <Window />
         </div>
-        <Door doorColorH="82deg" doorColorS="4%" doorColorL="25%" hasStairs />
+        <Door doorColor="#40423d" hasStairs />
       </Building>
     </>
   );
