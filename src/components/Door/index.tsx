@@ -1,24 +1,27 @@
 import React from "react";
+import { hexToHSL } from "../../helpers/hexToHsl";
 import styles from "./Door.module.scss";
 
 interface DoorProps {
   baseSize?: string;
-  doorColorH?: string;
-  doorColorS?: string;
-  doorColorL?: string;
+  doorColor?: string;
   hasStairs?: boolean;
 }
 
-export const Door: React.FunctionComponent<DoorProps> = (props) => (
-  <div
-    className={`${styles.door} ${props.hasStairs ? "has-stairs" : ""}`}
-    style={
-      {
-        "--baseSize": props.baseSize,
-        "--doorColorH": props.doorColorH,
-        "--doorColorS": props.doorColorS,
-        "--doorColorL": props.doorColorL
-      } as React.CSSProperties
-    }
-  ></div>
-);
+export const Door: React.FunctionComponent<DoorProps> = (props) => {
+  const hslColor = props.doorColor && hexToHSL(props.doorColor);
+
+  return (
+    <div
+      className={`${styles.door} ${props.hasStairs ? "has-stairs" : ""}`}
+      style={
+        {
+          "--baseSize": props.baseSize,
+          "--doorColorH": hslColor ? hslColor[0] + "deg" : undefined,
+          "--doorColorS": hslColor ? hslColor[1] + "%" : undefined,
+          "--doorColorL": hslColor ? hslColor[2] + "%" : undefined
+        } as React.CSSProperties
+      }
+    ></div>
+  );
+};

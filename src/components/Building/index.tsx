@@ -3,8 +3,8 @@ import styles from "./Building.module.scss";
 import { Pattern, PatternProps } from "../Pattern";
 
 interface BuildingProps extends PatternProps {
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
   background?: string;
 }
 
