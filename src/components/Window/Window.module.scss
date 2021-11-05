@@ -46,14 +46,4 @@
     background-color: hsl(var(--frameColorH) var(--frameColorS) calc(var(--frameColorL) + 15%));
     border-top: 0.1875em solid hsl(var(--frameColorH) var(--frameColorS) calc(var(--frameColorL) + 30%));
   }
-
-  &:global(.is-round) {
-    width: 3.5em;
-    border-radius: 100%;
-
-    &::before, 
-    &::after {
-      display: none;
-    }
-  }
 }
