@@ -1,0 +1,57 @@
+@import "../../styles/settings";
+
+.door {
+  --doorColorH: 218deg;
+  --doorColorS: 60%;
+  --doorColorL: 29%;
+  --doorColor: hsl(var(--doorColorH) var(--doorColorS) var(--doorColorL));
+  --baseSize: 16px;
+
+  // TODO: finish door
+
+  width: 4em;
+  height: 8em;
+  background: var(--doorColor);
+  border: 6px solid hsl(var(--doorColorH) var(--doorColorS) calc(var(--doorColorL) - 10%));
+  border-bottom: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  font-size: var(--baseSize);
+  transform: translateX(-50%);
+
+
+  // Door handle
+  &::before {
+    content: '';
+    width: 0.25em;
+    height: 0.25em;
+    
+    position: absolute;
+    top: 50%;
+    right: 0.25em;
+    transform: translateY(-50%);
+  
+    border-radius: 50%;
+    background-color: #F9BD82;
+  }
+
+  &:global(.has-stairs) {
+    &::after {
+      $stairOffset: 0.75em;
+      content: '';
+      width: calc(100% + #{$stairOffset * 2});
+      height: 0.75em;
+  
+      position: absolute;
+      bottom: 0;
+      left: -$stairOffset;
+  
+      background-color: hsl(var(--doorColorH) var(--doorColorS) calc(var(--doorColorL) + 15%));
+      border-bottom: 0.25em solid hsl(var(--doorColorH) var(--doorColorS) calc(var(--doorColorL) + 27.5%));
+      border-top: 0.25em solid hsl(var(--doorColorH) var(--doorColorS) calc(var(--doorColorL) + 30%));
+    }
+  }
+}

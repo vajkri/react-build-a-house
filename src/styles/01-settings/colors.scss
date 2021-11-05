@@ -1,0 +1,12 @@
+@import "../02-tools/color-functions";
+
+$colorPrimary: #224889;
+
+$colorPrimary90: shade($colorPrimary, 10%);  // #1f417b
+
+$colorPrimary105: tint($colorPrimary, 5%);   // #2d518f
+$colorPrimary115: tint($colorPrimary, 15%);  // #43639b
+$colorPrimary125: tint($colorPrimary, 25%);  // #5976a7
+$colorPrimary175: tint($colorPrimary, 75%);  // #c8d1e2
+
+$colorDarkSubdued: #282828;

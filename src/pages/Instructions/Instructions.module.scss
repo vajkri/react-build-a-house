@@ -1,0 +1,17 @@
+@import "../../styles/settings";
+
+.section {
+  &:not(:last-child) {
+    margin-bottom: $spacingXl;
+  }
+}
+
+.list {
+  margin-left: $spacingBase;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: $spacingSm;
+    }
+  }
+}

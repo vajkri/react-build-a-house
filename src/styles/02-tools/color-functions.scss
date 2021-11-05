@@ -1,0 +1,11 @@
+// Tint function
+// Used for slightly lightening a color
+@function tint($color, $percentage) {
+	@return mix(white, $color, $percentage);
+}
+
+// Shade function
+// Used for slightly darkening a color
+@function shade($color, $percentage) {
+	@return mix(black, $color, $percentage);
+}

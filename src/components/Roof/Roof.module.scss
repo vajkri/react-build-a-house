@@ -1,0 +1,37 @@
+@import "../../styles/settings";
+
+.roof {
+  --roofHeight: 16px;
+  --background: #162f59;
+
+  width: calc(100% + #{$spacingBase * 2});
+  height: var(--roofHeight);
+
+  position: absolute;
+  bottom: 100%;
+  left: -$spacingBase;
+
+  background: var(--background);
+
+  &:global(.is-hip) {
+    width: 100%;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 50%;
+    overflow: hidden;
+
+    left: 0;
+    background: none;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left:-500px;
+      border-left: 500px solid transparent;
+      border-right: 500px solid transparent;
+      border-bottom: 500px solid var(--background);
+    }
+  }
+}
