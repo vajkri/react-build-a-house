@@ -22,11 +22,13 @@ export default function App() {
           </Link>
         </nav>
 
-        <p className={styles.subTitle}>Byg dit eget</p>
-        <h1 className={styles.title}>
-          <span className="u-text-thin">Hese</span>
-          <span className="u-text-bold">HUS</span>
-        </h1>
+        <header className={styles.titleWrapper}>
+          <p className={styles.subTitle}>Byg dit eget</p>
+          <h1 className={styles.title}>
+            <span className="u-text-thin">Hese</span>
+            <span className="u-text-bold">HUS</span>
+          </h1>
+        </header>
 
         <Switch>
           <Route exact path="/">
