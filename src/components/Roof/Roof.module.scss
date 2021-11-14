@@ -1,7 +1,7 @@
 @import "../../styles/settings";
 
 .roof {
-  --roofHeight: 16px;
+  --roofHeight: 1.6vh;
   --background: #162f59;
 
   width: calc(100% + #{$spacingBase * 2});
@@ -28,10 +28,10 @@
       display: block;
       width: 0;
       height: 0;
-      margin-left:-500px;
-      border-left: 500px solid transparent;
-      border-right: 500px solid transparent;
-      border-bottom: 500px solid var(--background);
+      margin-left:-50vh;
+      border-left: 50vh solid transparent;
+      border-right: 50vh solid transparent;
+      border-bottom: 50vh solid var(--background);
     }
   }
 }

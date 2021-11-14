@@ -1,0 +1,11 @@
+@import "../settings";
+
+.m-link {
+  font-weight: $fontWeightBold;
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

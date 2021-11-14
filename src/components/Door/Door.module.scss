@@ -5,14 +5,14 @@
   --doorColorS: 60%;
   --doorColorL: 29%;
   --doorColor: hsl(var(--doorColorH) var(--doorColorS) var(--doorColorL));
-  --baseSize: 16px;
+  --baseSize: 1.6vh;
 
   // TODO: finish door
 
   width: 4em;
   height: 8em;
   background: var(--doorColor);
-  border: 6px solid hsl(var(--doorColorH) var(--doorColorS) calc(var(--doorColorL) - 10%));
+  border: 0.6vh solid hsl(var(--doorColorH) var(--doorColorS) calc(var(--doorColorL) - 10%));
   border-bottom: 0;
 
   position: absolute;
