@@ -10,14 +10,14 @@ export const Demo: React.FunctionComponent<PageProps> = () => {
   return (
     <>
       <div className="m-cloud-wrapper">
-        <Cloud baseSize="48px" />
-        <Cloud baseSize="70px" topOffset="75px" delay="3s" />
-        <Cloud baseSize="56px" topOffset="50px" delay="8s" />
-        <Cloud baseSize="86px" topOffset="100px" delay="13s" />
-        <Cloud baseSize="30px" topOffset="65px" delay="17s" />
+        <Cloud baseSize="4.8vh" />
+        <Cloud baseSize="7vh" topOffset="7.5vh" delay="3s" />
+        <Cloud baseSize="5.6vh" topOffset="5vh" delay="8s" />
+        <Cloud baseSize="8.6vh" topOffset="10vh" delay="13s" />
+        <Cloud baseSize="3vh" topOffset="6.5vh" delay="17s" />
       </div>
 
-      <Building width="312px" height="336px">
+      <Building width="31.2vh" height="33.6vh">
         <Roof />
         <div className="m-window-row">
           <Window frameColor="#002057" />
@@ -37,7 +37,7 @@ export const Demo: React.FunctionComponent<PageProps> = () => {
         <Door doorColor="#707561" />
       </Building>
 
-      <Building width="288px" height="480px" pattern="masonry">
+      <Building width="28.8vh" height="48vh" pattern="masonry">
         <Roof roofColor="#643120" />
         <div className="m-window-row">
           <Window />

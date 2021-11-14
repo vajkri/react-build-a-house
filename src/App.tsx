@@ -50,6 +50,17 @@ export default function App() {
           </Route>
         </Switch>
       </Router>
+      <footer className={styles.footer}>
+        © Copyright 2021{" "}
+        <a
+          className="m-link"
+          href="http://hesehus.dk/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Hesehus A/S
+        </a>
+      </footer>
     </div>
   );
 }
