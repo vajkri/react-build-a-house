@@ -1,17 +1,19 @@
 @import "./styles/settings";
 
+$roadSize: $spacingBase;
+
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: $spacingBase $spacingBase;
+  padding: $spacingBase;
 }
 
 .nav {
   display: flex;
   width: 100%;
-  margin-bottom: 4vh;
+  margin-bottom: $spacingLg;
 }
 
 .navLink {
@@ -59,7 +61,7 @@
     border-radius: 14px;
 
     &.hasRoad {
-      padding-bottom: 2vh;
+      padding-bottom: $roadSize;
     }
   }
 
@@ -68,7 +70,7 @@
       content: '';
       display: block;
       width: 100%;
-      height: 2vh;
+      height: $roadSize;
 
       position: absolute;
       bottom: 0;
@@ -81,11 +83,11 @@
 
   &.isText {
     text-align: left;
-    max-width: 800px;
+    max-width: 80vh;
   }
 }
 
 .footer {
-  margin-top: 2vh;
+  margin-top: $spacingBase;
   font-size: 12px;
 }
