@@ -12,13 +12,13 @@ export default function App() {
       <Router>
         <nav className={styles.nav}>
           <Link className={styles.navLink} to="/">
-            Eksempel
-          </Link>
-          <Link className={styles.navLink} to="playground">
-            Legeplads
+            Demo
           </Link>
           <Link className={styles.navLink} to="instructions">
-            Vejledning
+            Instructions
+          </Link>
+          <Link className={styles.navLink} to="playground">
+            Playground
           </Link>
         </nav>
 
