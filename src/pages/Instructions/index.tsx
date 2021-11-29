@@ -25,6 +25,13 @@ export const Instructions: React.FunctionComponent = () => (
           street
         </li>
         <li>
+          Add a new prop / prop variant to an existing component (e.g. curtains
+          for the window, double door, rain clouds, etc.)
+        </li>
+        <li>
+          Add a component (e.g. chimney, sun, trash can, street lights, etc.)
+        </li>
+        <li>
           Update a component's design (e.g. move door handle over to the other
           side)
         </li>
@@ -33,13 +40,6 @@ export const Instructions: React.FunctionComponent = () => (
           src/patterns/README.md)
         </li>
         <li>Animate something (e.g. get the clouds to move the other way)</li>
-        <li>
-          Add a new prop / prop variant to an existing component (e.g. curtains
-          for the window, double door, rain clouds, etc.)
-        </li>
-        <li>
-          Add a component (e.g. chimney, sun, trash can, street lights, etc.)
-        </li>
       </ul>
     </section>
   </>
