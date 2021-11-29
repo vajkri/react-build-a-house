@@ -4,38 +4,42 @@ import styles from "./Instructions.module.scss";
 export const Instructions: React.FunctionComponent = () => (
   <>
     <section className={styles.section}>
-      <h1>Opgave</h1>
+      <h2>Exercise</h2>
       <ol className={styles.list}>
         <li>
-          Byg et hus, som indeholder både en bygning, tag, vindue(r) og en dør.
+          Build a house, that includes both a building, a roof, windows and a
+          door.
         </li>
         <li>
-          Experimentér med farver, størrelser, mønstrer, osv. på de forskellige
-          komponenter.
+          Experiement with colors, sizes, patterns, etc. within the various
+          components.
         </li>
       </ol>
     </section>
 
     <section className={styles.section}>
-      <h1>Bonus opgaver / idéer</h1>
+      <h2>Bonus tasks and ideas</h2>
       <ul className={styles.list}>
         <li>
-          Byg flere (gerne forskellige) huse ved siden af det første for at
-          skabe en gade
+          Build multiple (different) houses next to each other to create a
+          street
         </li>
         <li>
-          Ændr i en komponents udseende (fx flyt håndtaget på døren til den
-          anden side)
+          Add a new prop / prop variant to an existing component (e.g. curtains
+          for the window, double door, rain clouds, etc.)
         </li>
         <li>
-          Prøv at hente og bruge dine egne mønstre (intrukser findes ved
+          Add a component (e.g. chimney, sun, trash can, street lights, etc.)
+        </li>
+        <li>
+          Update a component's design (e.g. move door handle over to the other
+          side)
+        </li>
+        <li>
+          Add a new svg building facade pattern (instructions can be found at
           src/patterns/README.md)
         </li>
-        <li>Animér noget, fx få skyerne til at bevæge sig den modsætte vej</li>
-        <li>
-          Tilføj en ny variant (fx rundt vindue variant til Window componenten)
-        </li>
-        <li>Tilføj en ny komponent (fx skorsten, gardiner, sol, osv.)</li>
+        <li>Animate something (e.g. get the clouds to move the other way)</li>
       </ul>
     </section>
   </>
