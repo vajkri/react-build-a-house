@@ -3,7 +3,7 @@ import { Building } from "../../components/Building";
 import { Roof } from "../../components/Roof";
 import { buildings } from "./data";
 
-export const Playground: React.FunctionComponent = () => {
+export const Solution: React.FunctionComponent = () => {
   return (
     <>
       {buildings.map((b) => (
